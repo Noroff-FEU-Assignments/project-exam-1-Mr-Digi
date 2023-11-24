@@ -16,7 +16,6 @@ function onload() {
         navContainer.id = "sliderNav";
         for (var i=0; i < data.length; i++) {
             if (data[i]._embedded['wp:term'][0][0].name == "Featured") {
-                console.log(data[i]);
                 let postObj = document.createElement("div");
                 postObj.id = "post";
 
@@ -132,7 +131,6 @@ function getPost(id) {
         } else {
             postID = 0;
         }
-        console.log(postID);
         let latestObj = document.getElementById("latestPosts");
         let postObj = document.createElement("div");
         postObj.id = "post";

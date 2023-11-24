@@ -10,7 +10,6 @@ function onload() {
     })
     .then(resp => resp.json())
     .then(function(data) {
-        console.log(data);
         let titleArea = document.getElementById("titleArea");
         let slugBox = document.createElement("div");
         slugBox.id = "slug";
