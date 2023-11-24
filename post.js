@@ -12,7 +12,6 @@ function onload() {
     .then(function(data) {
         let contentObj = document.getElementById("latestContent");
         let modalObj = document.getElementById("modal");
-        console.log(data);
         for (var i=0; i < data.length; i++) {
             let postObj = document.createElement("div");
             postObj.id = "postPage";
@@ -48,7 +47,6 @@ function onload() {
         }
     })
     .catch(function(error) {
-        console.log(error);
         let contentObj = document.getElementById("latestContent");
         let errorObj = document.createElement("h2");
         errorObj.innerHTML = "Failed to load posts from extrernal website";

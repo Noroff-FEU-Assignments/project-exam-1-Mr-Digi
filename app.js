@@ -1,7 +1,7 @@
 let postID = 0;
 function onload() {
     var key = "o4e5h1SNHZaP4vyOzcEIRmaA";
-    const url = "https://rustelectrics.mrdigi.tv/wp-json/wp/v2/posts?_embed&Authorization=Bearer"+ key;
+    const url = "https://rustelectrics.mrdigi.tv/wp-json/wp/v2/posts?_embed&per_page=100&Authorization=Bearer"+ key;
     fetch(url, {
         method: "GET",
         headers: {

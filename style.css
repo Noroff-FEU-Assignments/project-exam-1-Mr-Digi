@@ -26,6 +26,28 @@ body {
     grid-template-columns: repeat(2,minmax(0,1fr));
 }
 
+#titleArea #slug, img{
+    float: left;
+}
+
+#titleArea #slug {
+    margin-left: 30px;
+    margin-top: 40px;
+}
+
+#titleArea h3 {
+    color: #7c7f99;
+}
+
+#titleArea h1 {
+    color: #393644;
+}
+
+footer {
+    background-color: black;
+    margin-top: 60px;
+}
+
 #menu {
     margin: 0px;
 }
@@ -43,9 +65,36 @@ body {
 
 #menu li:hover {
     background-color: #833000;
+    height: 60px;
 }
 
 #menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#menuFooter {
+    margin: 0px;
+    padding: 0px;
+}
+
+#menuFooter li{
+    display: block;
+    width: 100px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+#menuFooter li a:hover {
+    color: #b5b5b5;
+}
+
+#menuFooter li a {
     text-decoration: none;
     color: white;
     font-size: 1rem;
@@ -168,6 +217,20 @@ body {
     margin: 10px;
 }
 
+#showMore {
+    width: 250px;
+    height: 50px;
+    border: 0px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #a73f01;
+    color: white;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 25px;
+    display: block;
+}
+
 #error {
     color: #782c00;
     text-align: center;
@@ -176,6 +239,10 @@ body {
 
 #sliderNav {
     display: block;
-    width: 10%;
+    width: 100px;
     margin: auto;
+}
+
+#container {
+    padding-bottom: 30px;
 }
