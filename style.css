@@ -1,0 +1,60 @@
+body {
+    margin: 0px;
+    background-color: #d5dde0;
+}
+
+#topLine {
+    background-color: #a73f01;
+    height: 30px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+#header {
+    background-color: #f6f6f6;
+    height: 200px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+#latestContent {
+    width: 70%;
+    background-color: white;
+    margin: auto;
+    margin-top: 60px;
+    border-radius: 25px;
+}
+
+#post {
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+}
+
+#post img {
+    width: 100%;
+    margin: 20px;
+}
+
+#post #textArea {
+    margin: auto;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#post #readPost {
+    width: 150px;
+    height: 50px;
+    border: 0px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #a73f01;
+    color: white;
+    border-radius: 25px;
+}
+
+#post #readPost:hover {
+    background-color: #782c00;
+    cursor: pointer;
+}
