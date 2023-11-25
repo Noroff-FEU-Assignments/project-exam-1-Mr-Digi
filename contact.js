@@ -28,7 +28,7 @@ function validate() {
     } else {
         contactMessageError.style.display = "none";
     }
-console.log(contactEmail.validity.valid);
+    
     if (contactEmail.validity.valid == false && contactEmail.value.length > 0) {
         contactEmailError.style.display = "block";
     } else {
