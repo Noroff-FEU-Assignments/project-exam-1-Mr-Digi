@@ -66,6 +66,10 @@ footer {
     border-bottom-right-radius: 25px;
 }
 
+.currentPage {
+    height: 60px;
+}
+
 #menu li:hover {
     background-color: #833000;
     height: 60px;
@@ -343,6 +347,11 @@ input[type=submit]:hover {
         padding-left: 0px;
         padding-right: 0px;
         border-radius: 0px;
+    }
+
+    .currentPage {
+        height: auto;
+        text-decoration: underline;
     }
 
     #menu li:hover {

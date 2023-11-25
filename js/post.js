@@ -23,10 +23,12 @@ function onload() {
 
             let postImg = document.createElement("img");
             postImg.src = data[i]._embedded['wp:featuredmedia'][0].source_url;
+            postImg.alt = data[i]._embedded['wp:featuredmedia'][0].alt_text;
             postImg.setAttribute("onclick","openModal()");
 
             let modalImg = document.createElement("img");
             modalImg.src = postImg.src;
+            modalImg.alt = postImg.alt;
             modalObj.appendChild(modalImg);
 
             let postTextArea = document.createElement("div");

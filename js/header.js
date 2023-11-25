@@ -19,6 +19,7 @@ function onload() {
 
         let profileImg = document.createElement("img");
         profileImg.src = data._embedded['wp:featuredmedia'][0].source_url;
+        profileImg.alt = data._embedded['wp:featuredmedia'][0].alt_text;
 
         imgUrl.appendChild(profileImg);
         titleArea.appendChild(imgUrl);

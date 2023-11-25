@@ -12,21 +12,23 @@ function onload() {
         let contentObj = document.getElementById("latestContent");
         let modalObj = document.getElementById("modal");
         for (var i=0; i < data.length; i++) {
-            if (data[i].title.rendered == "About") {
+            console.log(data[i]);
+            if (data[i].slug== "about") {
                 let postObj = document.createElement("div");
                 postObj.id = "post";
 
                 let sectionHead = document.createElement("h1");
-                sectionHead.id = "postTitle";
+                sectionHead.id = "aboutTitle";
                 sectionHead.innerHTML = data[i].title.rendered;
-                contentObj.appendChild(sectionHead);
 
                 let postImg = document.createElement("img");
                 postImg.src = data[i]._embedded['wp:featuredmedia'][0].source_url;
+                postImg.alt = data[i]._embedded['wp:featuredmedia'][0].alt_text;
                 postImg.setAttribute("onclick","openModal()");
 
                 let modalImg = document.createElement("img");
                 modalImg.src = postImg.src;
+                modalImg.alt = postImg.alt;
                 modalObj.appendChild(modalImg);
 
                 let postTextArea = document.createElement("div");
@@ -38,7 +40,7 @@ function onload() {
 
                 let postLink = document.createElement("a");
                 postLink.setAttribute("href","post.html?id="+data[i].id)
-
+                postTextArea.appendChild(sectionHead);
                 postTextArea.appendChild(postText);
                 postTextArea.appendChild(postLink);
                 postObj.appendChild(postImg);

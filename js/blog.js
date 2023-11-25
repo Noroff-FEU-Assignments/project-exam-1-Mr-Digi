@@ -21,6 +21,7 @@ function onload() {
 
             let postImg = document.createElement("img");
             postImg.src = data[i]._embedded['wp:featuredmedia'][0].source_url;
+            postImg.alt = data[i]._embedded['wp:featuredmedia'][0].alt_text;
 
             let postTextArea = document.createElement("div");
             postTextArea.id = "textArea";
@@ -92,6 +93,7 @@ function loadMore() {
 
             let postImg = document.createElement("img");
             postImg.src = data[i]._embedded['wp:featuredmedia'][0].source_url;
+            postImg.alt = data[i]._embedded['wp:featuredmedia'][0].alt_text;
 
             let postTextArea = document.createElement("div");
             postTextArea.id = "textArea";
