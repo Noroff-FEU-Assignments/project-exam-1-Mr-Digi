@@ -288,6 +288,19 @@ input[type=submit]:hover {
     color: #833000;
 }
 
+@media only screen and (max-width: 1376px) {
+    #headContent {
+        width: 100%;
+        margin-left: 20px;
+    }
+
+    #menu {
+        position: absolute;
+        right: 20px;
+        top: 30px;
+    }
+}
+
 /*Mobile css changes*/
 @media only screen and (max-width: 768px) {
     #header {
@@ -297,6 +310,7 @@ input[type=submit]:hover {
     #headContent {
         width: 100%;
         grid-template-columns: repeat(1, minmax(0,1fr));
+        margin: 0px;
     }
 
     #titleArea img {
@@ -337,6 +351,8 @@ input[type=submit]:hover {
         margin: auto;
         padding: 0px;
         width: 100%;
+        position: relative;
+        right: 0px;
     }
 
     #menu li a {
