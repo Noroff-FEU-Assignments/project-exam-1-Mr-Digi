@@ -250,3 +250,36 @@ footer {
 #container {
     padding-bottom: 30px;
 }
+
+form {
+    width: 70%;
+    margin: auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: none;
+}
+
+input[type=submit] {
+    background-color: #a73f01;
+    color: white;
+    border: none;
+    width: 200px;
+    border-radius: 25px;
+}
+
+input[type=submit]:hover {
+    background-color: #833000;
+}
+
+.error {
+    font-size: 1rem;
+    display: none;
+    color: #833000;
+}

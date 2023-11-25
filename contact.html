@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="contact.js"></script>
+        <script type="text/javascript" src="header.js"></script>
+    </head>
+    <body>
+        <div id="modal" onclick="closeModal()">
+            
+        </div>
+        <div id="topLine"></div>
+
+        <div id="header">
+            <div id="headContent">
+                <div id="titleArea">
+                    
+                </div>
+                <ul id="menu">
+                    <li>
+                        <a href="index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="about.html">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="blogs.html">BLOGS</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="latestContent">
+            <div id="postPage">
+                <h1 id="postTitle">Contact me</h1>
+                <div id="textAreaPost">
+                    <form>
+                        <label for="name">Name:</label>
+                        <input type="text" onchange="validate()" id="name" name="name" placeholder="Your Name..." required>
+                        <p class="error" id="nameError">Your name must be more than 5 characters long</p>
+                    
+                        <label for="mail">Email:</label>
+                        <input type="email" onchange="validate()" id="mail" name="mail" placeholder="Your Email..." required>
+                        <p class="error" id="emailError">You must use a valid E-mail</p>
+                        
+                        <label for="subject">Subject:</label>
+                        <input type="text" onchange="validate()" id="subject" name="subject" placeholder="Subject..." required>
+                        <p class="error" id="subjectError">The subject must be more than 15 characters long</p>
+
+                        <label for="message">Message:</label>
+                        <textarea id="message" onchange="validate()" name="message" placeholder="Write me a message.." style="height:300px" required></textarea>
+                        <p class="error" id="messageError">Your message must be more than 25 characters long</p>
+
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <ul id="menuFooter">
+            <li>
+                <a href="about.html">ABOUT</a>
+            </li>
+            <li>
+                <a href="blogs.html">BLOGS</a>
+            </li>
+            <li>
+                <a href="contact.html">CONTACT</a>
+            </li>
+        </ul>
+    </footer>
+</html>
