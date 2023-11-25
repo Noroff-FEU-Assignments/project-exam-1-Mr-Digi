@@ -58,7 +58,6 @@ footer {
 
 #menu li{
     display: inline-block;
-    width: 15%;
     margin: 0px;
     padding: 20px;
     background-color: #a73f01;
@@ -409,5 +408,20 @@ input[type=submit]:hover {
 
     input {
         width: 100%;
+    }
+
+    #navigationBtn {
+        width: 60px;
+        height: 60px;
+        display: block;
+        margin: auto;
+        padding: 0px;
+        border-radius: 100%;
+    }
+
+    #sliderNav {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0,1fr));
+        width: 150px;
     }
 }
