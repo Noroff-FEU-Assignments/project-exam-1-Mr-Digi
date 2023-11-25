@@ -58,7 +58,7 @@ footer {
 
 #menu li{
     display: inline-block;
-    width: 100px;
+    width: 15%;
     margin: 0px;
     padding: 20px;
     background-color: #a73f01;
@@ -235,6 +235,11 @@ footer {
     display: block;
 }
 
+#showMore:hover {
+    background-color: #782c00;
+    cursor: pointer;
+}
+
 #error {
     color: #782c00;
     text-align: center;
@@ -282,4 +287,127 @@ input[type=submit]:hover {
     font-size: 1rem;
     display: none;
     color: #833000;
+}
+
+/*Mobile css changes*/
+@media only screen and (max-width: 768px) {
+    #header {
+        height: 100%;
+    }
+
+    #headContent {
+        width: 100%;
+        grid-template-columns: repeat(1, minmax(0,1fr));
+    }
+
+    #titleArea img {
+        display: block;
+        margin: auto;
+        float: none;
+    }
+
+    #titleArea h1 {
+        text-align: center;
+    }
+
+    #titleArea h3 {
+        text-align: center;
+    }
+
+    #titleArea #slug {
+        float: none;
+        margin: 0px;
+    }
+
+    #menu li {
+        background-color: #f6f6f6;
+        display: block;
+        text-align: center;
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    #menu li:hover {
+        background-color: #f6f6f6;
+        display: block;
+        height: auto;
+    }
+
+    #menu {
+        margin: auto;
+        padding: 0px;
+        width: 100%;
+    }
+
+    #menu li a {
+        color: #a73f01;
+    }
+
+    #menu li a:hover {
+        color: #833000;
+    }
+
+    #post {
+        grid-template-columns: repeat(1, minmax(0,1fr));
+    }
+
+    #post img {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    #sectionHeading {
+        font-size: 2rem;
+    }
+    
+    #textArea {
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 20px;
+    }
+
+    #textArea h1 {
+        text-align: center;
+    }
+
+    #textArea p {
+        text-align: center;
+    }
+
+    #readPost {
+        display: block;
+        margin: auto;
+    }
+
+    #textArea a {
+        text-decoration: none;
+    }
+
+    #textAreaPost {
+        text-align: center;
+        font-size: 1rem;
+        margin: 20px;
+    }
+
+    form {
+        text-align: left;
+        display: block;
+        margin: auto;
+    }
+
+    #latestContent {
+        width: 100%;
+        border-radius: 0px;
+    }
+
+    #latestPosts {
+        width: 100%;
+        border-radius: 0px;
+    }
+
+    input {
+        width: 100%;
+    }
 }
