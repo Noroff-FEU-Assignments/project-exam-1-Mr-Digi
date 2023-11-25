@@ -293,6 +293,10 @@ input[type=submit]:hover {
         width: 100%;
     }
 
+    #headContent img {
+        margin-left: 20px;
+    }
+
     #menu {
         position: absolute;
         right: 20px;
