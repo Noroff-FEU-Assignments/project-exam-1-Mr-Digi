@@ -291,7 +291,6 @@ input[type=submit]:hover {
 @media only screen and (max-width: 1376px) {
     #headContent {
         width: 100%;
-        margin-left: 20px;
     }
 
     #menu {
