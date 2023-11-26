@@ -29,7 +29,7 @@ function validate() {
         contactMessageError.style.display = "none";
     }
     
-    if (contactEmail.validity.valid == false && contactEmail.value.length > 0) {
+    if (contactEmail.validity.valid == false && contactEmail.value.length > 0 && !contactEmail.value.includes("@")) {
         contactEmailError.style.display = "block";
     } else {
         contactEmailError.style.display = "none";
