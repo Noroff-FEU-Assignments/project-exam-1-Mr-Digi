@@ -38,11 +38,12 @@ function onload() {
             let postString = data[i].content.rendered;
             postText.innerHTML = postString;
 
-            let postLink = document.createElement("a");
-            postLink.setAttribute("href","post.html?id="+data[i].id)
+            let postAuthor = document.createElement("p");
+            postAuthor.id = "postAuthor";
+            postAuthor.innerHTML = "Written by: " + data[i]._embedded.author[0].name;
 
             postTextArea.appendChild(postText);
-            postTextArea.appendChild(postLink);
+            postTextArea.appendChild(postAuthor);
             postObj.appendChild(postImg);
             postObj.appendChild(postTextArea);
             contentObj.appendChild(postObj);

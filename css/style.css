@@ -36,7 +36,7 @@ body {
 
 #titleArea #slug {
     margin-left: 30px;
-    margin-top: 40px;
+    margin-top: 10px;
 }
 
 #titleArea h3 {
@@ -45,6 +45,10 @@ body {
 
 #titleArea h1 {
     color: #393644;
+}
+
+#postAuthor {
+    font-style: italic;
 }
 
 footer {
@@ -205,7 +209,7 @@ footer {
 }
 
 #modal img {
-    width: 70%;
+    height: 70%;
     position: relative;
     margin: auto;
     top: 15%;
@@ -216,12 +220,17 @@ footer {
 #navigationBtn {
     border: 0px;
     border-radius: 25px;
-    background-color: #782c00;
+    background-color: #a73f01;
     color: white;
     font-weight: bold;
     height: 30px;
     width: 30px;
     margin: 10px;
+}
+
+#navigationBtn:hover {
+    cursor: pointer;
+    background-color: #782c00;
 }
 
 #showMore {
@@ -283,6 +292,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
+    cursor: pointer;
     background-color: #833000;
 }
 

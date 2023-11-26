@@ -38,11 +38,8 @@ function onload() {
                 let postString = data[i].content.rendered;
                 postText.innerHTML = postString;
 
-                let postLink = document.createElement("a");
-                postLink.setAttribute("href","post.html?id="+data[i].id)
                 postTextArea.appendChild(sectionHead);
                 postTextArea.appendChild(postText);
-                postTextArea.appendChild(postLink);
                 postObj.appendChild(postImg);
                 postObj.appendChild(postTextArea);
                 contentObj.appendChild(postObj);
