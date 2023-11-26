@@ -55,6 +55,7 @@ function onload() {
         showMore.innerHTML = "Show more posts";
         showMore.setAttribute("onclick", "loadMore()");
         containerDiv.appendChild(showMore);
+        document.getElementById("loading").style.display = "none";
     })
     .catch(function(error) {
         console.log(error);

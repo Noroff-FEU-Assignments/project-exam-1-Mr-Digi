@@ -39,7 +39,7 @@ function onload() {
                 let postBtn = document.createElement("button");
                 postBtn.id = "readPost";
                 postBtn.innerHTML = "Read more";
-
+                document.getElementById("loading").style.display = "none";
                 postTextArea.appendChild(postTitle);
                 postTextArea.appendChild(postText);
                 postLink.appendChild(postBtn);

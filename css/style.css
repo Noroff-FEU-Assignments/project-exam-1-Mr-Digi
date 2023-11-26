@@ -86,6 +86,10 @@ footer {
     font-weight: bold;
 }
 
+#loading {
+    text-align: center;
+}
+
 #menuFooter {
     margin: 0px;
     padding: 0px;
